@@ -2,7 +2,11 @@
  * Estudando a modificação de atributos no html utilizando "dataset".
 */
 let lista = document.getElementById("lista");
-let number = parseInt(lista.getAttribute("data-number"));
+
+//Atribuindo um valor ao atributo.
+lista.dataset.number = "6";
+
+let number = parseInt(lista.dataset.number);
 
 let conteudo = "";
 
