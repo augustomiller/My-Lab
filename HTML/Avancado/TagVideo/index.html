@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estudando a tag Vídeo</h1>
+        <p>"O elemento HTML 'video' é utilizado para incorporar conteúdo de vídeo em
+            um documento
+            HTML ou XHTML.</p>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Video"></a>
+    </header>
+    <main>
+        <section>
+            <video preload="none" controls autoplay muted loop width="300"
+                src="./Assets/what-most-schools-dont-teach.mp4" poster="./Assets/poster.png"></video>
+            <!-- 
+                Preload = auto : Quando a página terminar de carregar o video começa a carregar na memória do navegador.
+                Preload = metadata: Quando a página terminar de carregar o vídeo só vai varregar alguns dados, como tamanho, nome etc..(dados que não faz parte do conteúdo do vídeo)
+                Preload = none : O vídeo não vai carregar quando a página terminar de carregar, ele só começa a carregar quando o visitante clicar no play.
+             -->
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./code.js"></script>
+</body>
+
+</html>
