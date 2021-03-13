@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag audio</title>
+</head>
+
+<body>
+
+    <audio id="music" controls>
+        <!-- Redundância para garantir que vai rodar em todos os browsers -->
+        <source src="music.ogg" type="audio/ogg">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>
+        HTML Audio/Video Methods<br>
+        Method Description<br>
+        addTextTrack() Adds a new text track to the audio/video<br>
+        canPlayType() Checks if the browser can play the specified audio/video type<br>
+        load() Re-loads the audio/video element<br>
+        play() Starts playing the audio/video<br>
+        pause() Pauses the currently playing audio/video<br>
+        HTML Audio/Video Properties<br>
+        Property Description<br>
+        audioTracks Returns an AudioTrackList object representing available audio tracks<br>
+        autoplay Sets or returns whether the audio/video should start playing as soon as it is loaded<br>
+        buffered Returns a TimeRanges object representing the buffered parts of the audio/video<br>
+        controller Returns the MediaController object representing the current media controller of the audio/video<br>
+        controls Sets or returns whether the audio/video should display controls (like play/pause etc.)<br>
+        crossOrigin Sets or returns the CORS settings of the audio/video<br>
+        currentSrc Returns the URL of the current audio/video<br>
+        currentTime Sets or returns the current playback position in the audio/video (in seconds)<br>
+        defaultMuted Sets or returns whether the audio/video should be muted by default<br>
+        defaultPlaybackRate Sets or returns the default speed of the audio/video playback<br>
+        duration Returns the length of the current audio/video (in seconds)<br>
+        ended Returns whether the playback of the audio/video has ended or not<br>
+        error Returns a MediaError object representing the error state of the audio/video<br>
+        loop Sets or returns whether the audio/video should start over again when finished<br>
+        mediaGroup Sets or returns the group the audio/video belongs to (used to link multiple audio/video elements)<br>
+        muted Sets or returns whether the audio/video is muted or not<br>
+        networkState Returns the current network state of the audio/video<br>
+        paused Returns whether the audio/video is paused or not<br>
+        playbackRate Sets or returns the speed of the audio/video playback<br>
+        played Returns a TimeRanges object representing the played parts of the audio/video<br>
+        preload Sets or returns whether the audio/video should be loaded when the page loads<br>
+        readyState Returns the current ready state of the audio/video<br>
+        seekable Returns a TimeRanges object representing the seekable parts of the audio/video<br>
+        seeking Returns whether the user is currently seeking in the audio/video<br>
+        src Sets or returns the current source of the audio/video element<br>
+        startDate Returns a Date object representing the current time offset<br>
+        textTracks Returns a TextTrackList object representing the available text tracks<br>
+        videoTracks Returns a VideoTrackList object representing the available video tracks<br>
+        volume Sets or returns the volume of the audio/video<br>
+    </p>
+
+</body>
+
+</html>
