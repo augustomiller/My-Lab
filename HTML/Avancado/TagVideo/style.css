@@ -3,7 +3,7 @@
     width: 640px;
     height: 360px;
 }
-.video {
+#video1 {
     width: 100%; /*O vídeo passa a ter 100% da largura do pai(div container)*/
 }
 .controle{
