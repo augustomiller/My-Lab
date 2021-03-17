@@ -1,0 +1,8 @@
+body{
+    background-color: gray;
+}
+img{
+    /* transform: rotate(-45deg); */
+    transform: scale(0.7, 0.7);
+    /* transform: skew(-45deg); */
+}
