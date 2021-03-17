@@ -1,0 +1,46 @@
+/* 
+Com as pseudo classes conseguimos selecionar um elemento baseado
+nas caracteríscas dele(o estado dele por exemplo...).
+*/
+
+/* Somente o input que estiver em foco ficará com o texto em vermelho. Devido
+a pseudo classe :focus */
+input:focus{
+    color: tomato;
+}
+
+/* Atualizar o primeiro elemento da lista de li's, essa classe busca e pega o primeiro
+filho de um elemento acima Ex: ul(pai)->li(primeiro filho)*/
+li:first-child{
+    color: teal;
+}
+
+/* Pega o primeiro elemento do tipo dele e seta as configurações pertinentes. */
+li:first-of-type{
+    color: tomato;
+}
+
+/* Pegando os filhos de um elemento pela sua posição */
+li:nth-child(3){
+    color: blue;
+}
+
+/* Pegando todos os números divisíveis por 2. Podendo usar o li:nth-of-type(even) para fazer isso também */
+li:nth-of-type(2n){
+    color: chartreuse;
+}
+
+/* Pegando todos os valores impares */
+li:nth-of-type(odd){
+    color: red;
+}
+
+/* Pegando os multiplos de 3 */
+li:nth-of-type(3n){
+    color: saddlebrown;
+}
+
+/* Pegar de 3 em 3 a partir do primeiro */
+li:nth-of-type(3n -2){
+    color: seagreen;
+}
