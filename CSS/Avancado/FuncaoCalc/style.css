@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+.container{
+    width: 100%;
+    background-color: steelblue;
+}
+.primeira{
+    display: inline-block;
+    width: calc(100% - 300px);
+    margin-right: -4px;
+    margin-bottom: -4px;
+    height: 300px;
+    background-color: yellowgreen;
+}
+.segunda{
+    display: inline-block;
+    width: 300px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    height: 300px;
+    background-color: green;
+}
+.central{
+    width: calc(100% - 200px);
+    height: 100px;
+    margin: auto;
+    background-color: lawngreen;
+}
