@@ -1,0 +1,53 @@
+/* 
+Seletores
+   é umas das formas para selecionar um elemeto.
+*/
+
+/*  "*" é um seletor que seleciona todos os elementos da página. */
+/* *{
+    background-color: whitesmoke;
+} */
+
+/* p, header, h2{
+    background-color: teal;
+} */
+/* Quando não se usa a virgurla e tem uma condição, seleciona todas as tags "p"
+que estejam dentro de uma div com o id "head".  */
+/* #head p{
+    background-color: tomato;
+} */
+
+/* Pega somente os elemenstos onde o id head for o Pai diretamente */
+/* #head > p{
+    background-color: yellowgreen;
+} */
+/* Pega o proximo elemento imediato, somente se ele for o primeiro, caso seja colocado um novo 
+elemento após a header essa condição não consiguirá pega-lo mais.*/
+/* #head + p{
+    background-color: violet;
+} */
+/* Pega todoso os paragrafos que antecedem um elemento, nesse caso um header. */
+/* header ~ p{
+    background-color: gray;
+} */
+
+/* Pega todos os elementos que conterem esse elemento width */
+/* [width]{
+    background-color: green;
+} */
+/* [width=500]{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+/* pega todo título que tenha a palavra título */
+/* [title~="tituloh2"]{
+    background-color: indigo;
+} */
+/* Como o acento circulflexo conseguimos pegar por letra(do nome do atributo ex: title="titulo") e ou por palavras. */
+/* [title^="t"]{
+    background-color: rgb(74, 54, 88);
+} */
+/* Pega todos os titulos que contiverem o que passarmos como parametro dentro das aspas */
+[title*="tu"]{
+    background-color: tomato;
+}
