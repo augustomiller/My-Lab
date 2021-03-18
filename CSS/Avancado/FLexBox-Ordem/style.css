@@ -12,6 +12,8 @@
             |_> Quando se usa Flex Box, conseguimos através do pai definir
                 de certa forma o posicionamento e o comportamento dos filhos.
             |_> Por padrão o Flex-direction é do tipo "row".
+            |_> A propriedade Order só funciona juntamente com o display flex. por padrão a
+                ordem é 0.
 */
 *{
     margin: 0;
@@ -25,34 +27,25 @@
 }
 .container{
     display: flex;
-    /* flex-direction: row; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* align-items: flex-end; */
-    /* align-content: center; */
-
-
 
     height: var(--size);
     color:whitesmoke;
     background-color: gray;
 }
-/* Flex shrink recebe como propriedade 0 ou 1, por padrão 
-é 1(que dizer que o elemento pode encolher.) */
+
 .r1{
-    /* flex-shrink: 0;  */
-    flex-grow: 1;
+    order: 3;
     background-color: tomato;
 }
 .r2{
-    flex-grow: 1;/*Padrão é 0*/
+    order: 2;
     background-color: rgb(184, 24, 184);
 }
 .r3{
-    flex-grow: 2; /* O 2 quer dizer que essa div será o dobro do tamanho das outras divs. Ou 3, nesse caso seria o triplo */
+    order: 1;
     background-color: cornflowerblue;
 }
 .rect{
-    /* width: var(--width); */
+    width: var(--width);
     height: var(--height);
 }
