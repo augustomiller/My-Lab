@@ -18,31 +18,41 @@
     padding: 0;
 }
 :root{
-    --size: 400px;
+    --size: 600px;
     --width: 200px;
     --height: 200px;
     background-color: darkgray;
 }
 .container{
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    justify-content: space-evenly; /*Mantem o mesmo espaço em ambos os lados*/
-    align-items: center; /*Alinha todos os elementos no centro*/
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* align-items: flex-end; */
+    /* align-content: center; */
+
+
+
     height: var(--size);
     color:whitesmoke;
     background-color: gray;
 }
+/* Flex shrink recebe como propriedade 0 ou 1, por padrão 
+é 1(que dizer que o elemento pode encolher.) */
 .r1{
+    /* flex-shrink: 0;  */
+    flex-grow: 1;
     background-color: tomato;
 }
 .r2{
+    flex-grow: 1;/*Padrão é 0*/
     background-color: rgb(184, 24, 184);
 }
 .r3{
+    flex-grow: 2; /* O 2 quer dizer que essa div será o dobro do tamanho das outras divs. Ou 3, nesse caso seria o triplo*/
     background-color: cornflowerblue;
 }
 .rect{
-    width: var(--width);
+    /* width: var(--width); */
     height: var(--height);
 }
