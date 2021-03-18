@@ -1,0 +1,47 @@
+/* 
+** FlexBox - Criando um designer que seja flexivel para qualquer tamanho de tela.
+
+ Observações: 
+            |_> Por padrão as div's tem o Display block, isso faz com
+             que o elemento use todo os espaço disponível do pai na 
+             horizontal, e na vertical ele usa o espaço necessário,
+             para conter o conteúdo.
+            |_> Cada div tem o seu Display block.
+            |_> Quano se aplica um Flex em um elementeo que tenha filhos
+                todos os elementos filhos vão sofrer uma mudança.
+            |_> Quando se usa Flex Box, conseguimos através do pai definir
+                de certa forma o posicionamento e o comportamento dos filhos.
+            |_> Por padrão o Flex-direction é do tipo "row".
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --size: 400px;
+    --width: 100px;
+    --height: 100px;
+    background-color: darkgray;
+}
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
+    height: var(--size);
+    color:whitesmoke;
+    background-color: gray;
+}
+.r1{
+    background-color: tomato;
+}
+.r2{
+    background-color: rgb(184, 24, 184);
+}
+.r3{
+    background-color: cornflowerblue;
+}
+.rect{
+    width: var(--width);
+    height: var(--height);
+}
