@@ -1,0 +1,25 @@
+:root{
+    --var-color: tomato;
+    background-color: gray;
+
+    --square-size: 300px;
+}
+
+.p2{
+    background-color: var(--var-color);
+    font-size: 26px;
+}
+.p3{
+    background-color: var(--var-color);
+    font-size: 33px;
+}
+.square1{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: yellowgreen;
+}
+.square2{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: aquamarine;
+}
