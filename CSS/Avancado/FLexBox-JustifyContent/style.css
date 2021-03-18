@@ -26,7 +26,8 @@
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-evenly; /*Mantem o mesmo espaço em ambos os lados*/
 
     height: var(--size);
     color:whitesmoke;
