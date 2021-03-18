@@ -28,7 +28,7 @@
     flex-direction: row;
     /* justify-content: space-around; */
     justify-content: space-evenly; /*Mantem o mesmo espaço em ambos os lados*/
-
+    align-items: center; /*Alinha todos os elementos no centro*/
     height: var(--size);
     color:whitesmoke;
     background-color: gray;
